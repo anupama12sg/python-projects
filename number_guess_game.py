@@ -4,7 +4,8 @@ import random
 number_to_guess = random.randint(1, 100)
 
 #Loop
-try:
+while True:
+ try:
     guess = int(input("Guess the number between 1 to 100: "))
     if guess < number_to_guess:
         print("Too low!")
@@ -12,7 +13,8 @@ try:
         print("Too high!")
     else:
         print("Congrats! You got the right number!")
-except ValueError:
+        break
+ except ValueError:
     print("Please enter a valid number.")
     
 
