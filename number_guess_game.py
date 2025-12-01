@@ -4,8 +4,10 @@ import random
 number_to_guess = random.randint(1, 100)
 
 #Loop
-guess = int(input("Guess the number between 1 to 100: "))
-print(guess)
+try:
+    guess = int(input("Guess the number between 1 to 100: "))
+except ValueError:
+    print("Please enter a valid number.")
  # Ask the user to guess the number
  # If the number is not valid
  #  Print an error
