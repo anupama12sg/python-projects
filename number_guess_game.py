@@ -6,9 +6,18 @@ number_to_guess = random.randint(1, 100)
 #Loop
 try:
     guess = int(input("Guess the number between 1 to 100: "))
+    if guess < number_to_guess:
+        print("Too low!")
+    elif guess > number_to_guess:
+        print("Too high!")
+    else:
+        print("Congrats! You got the right number!")
 except ValueError:
     print("Please enter a valid number.")
- # Ask the user to guess the number
+    
+
+    
+# Ask the user to guess the number
  # If the number is not valid
  #  Print an error
  # If the number < guess_number
