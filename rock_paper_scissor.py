@@ -1,5 +1,8 @@
+
+choices = ['r', 'p', 's']
+
 user_choice = input("Rock, paper, scissor (r/p/s):").lower()
-if user_choice != 'r' and user_choice != 'p' and user_choice != 's':
+if user_choice not in choices:
     print("Invalid Choice.")
 
 
