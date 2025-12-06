@@ -1,9 +1,11 @@
+import random
 
-choices = ['r', 'p', 's']
+choices = ('r', 'p', 's')
 
 user_choice = input("Rock, paper, scissor (r/p/s):").lower()
 if user_choice not in choices:
     print("Invalid Choice.")
+computer_choice = random.choice(choices)
 
 
 # Ask the user to make a choice
